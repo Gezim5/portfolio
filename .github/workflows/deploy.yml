@@ -3,20 +3,20 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger deploy on push to main branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write
+      contents: write  # Required to push to gh-pages branch
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build Vite project
         run: npm run build
 
       - name: Deploy to GitHub Pages
