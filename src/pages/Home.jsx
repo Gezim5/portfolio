@@ -7,6 +7,7 @@ import { stats } from '../data/stats';
 import { projects } from '../data/projects';
 import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -39,12 +40,12 @@ const Home = () => {
           ))}
         </div>
         <div className="text-center mt-8">
-          <a
-            href="/data/projects.js"
+          <Link
+            to="/projects"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium"
           >
             View All Projects
-          </a>
+          </Link>
         </div>
       </section>
 
