@@ -55,7 +55,7 @@ const languages = [
   { name: "Albanian", level: "Native" },
   { name: "English", level: "B1" },
   { name: "Italian", level: "B1" },
-  { name: "German", level: "A2.2" },
+  { name: "German", level: "B1" },
 ];
 
 const education = [
