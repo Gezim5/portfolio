@@ -40,7 +40,7 @@ const Home = () => {
         </div>
         <div className="text-center mt-8">
           <a
-            href="/projects"
+            href="/projects.js"
             className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium"
           >
             View All Projects
